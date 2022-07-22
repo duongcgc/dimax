@@ -1,0 +1,61 @@
+@media (max-width: 480px) {
+    .dimax-products-tabs,
+    .dimax-products-carousel ,
+    .dimax-products-deal {
+        .swiper-scrollbar {
+            max-width: 250px;
+        }
+    }
+
+
+    .dimax-icons-box-carousel {
+        .rz-swiper-button {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .dimax-lookbook-slider-elementor .product-item{
+        width: 165px;
+    }
+
+    .dimax-pricing-table__content{
+        padding: 27px 20px 40px;
+
+        .pricing-desc{
+            margin-bottom: 30px;
+        }
+    }
+
+    .dimax-testimonials-grid{
+        .testimonial-item{
+            width: 100%;
+        }
+    }
+
+    .dimax-countdown{
+        .timer{
+            padding: 0 15px;
+
+            .divider{
+                right: -6px;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .dimax-products-with-banner {
+        ul.products.layout-masonry {
+            li.product {
+                &.has-banner {
+                    grid-column: span 2 !important;
+                }
+            }
+        }
+
+    }
+
+    .dimax-products-carousel-with-thumbnails ul.products.product-loop-layout-8 li.product .product-thumbnail .product-loop-inner__buttons {
+        left: 5px;
+    }
+}

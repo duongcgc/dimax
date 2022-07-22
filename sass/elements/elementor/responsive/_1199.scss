@@ -1,0 +1,19 @@
+@media (max-width: 1199px) {
+    .dimax-product-shortcode{
+        &.single-product {
+            div.product {
+                .entry-summary {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .dimax-products-carousel__slidesperviewauto-yes .dimax-products-carousel {
+        margin-right: 0 !important;
+
+        ul.products li.swiper-item-empty {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@media (min-width: 1500px) {
+	.dimax-sticky-add-to-cart {
+		.container-fluid{
+			padding-left: 90px;
+			padding-right: 90px;
+		}
+	}
+
+	.single-product:not(.full-content).product-full-width div.product .entry-summary {
+		padding-left: 90px;
+	}
+
+	.dimax-catalog-page:not(.full-content) .dimax-container,
+	.dimax-catalog-page:not(.full-content) .dimax-container-wide {
+		--dimax-catalog-sidebar-width: 385px;
+	}
+
+
+	body.dimax-catalog-page:not(.full-content) .dimax-container,
+	body.dimax-catalog-page:not(.full-content) .dimax-container-wide {
+		--dimax-catalog-sidebar-space: 65px;
+	}
+}
+
+@media (min-width: 1300px) {
+    body.single-product.product-full-width:not(.full-content) {
+        --dimax-product-sidebar-space: 65px;
+    }
+	body.single-product:not(.full-content) {
+        --dimax-product-sidebar-width: 320px;
+    }
+
+}

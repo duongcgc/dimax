@@ -1,0 +1,160 @@
+.dimax-promo-box {
+    position: relative;
+    &:hover{
+        .dimax-icon{
+            transform: translateX(3px);
+			/*rtl:raw:
+                transform: translateX(-3px) rotateY(180deg);
+            */
+        }
+
+        .image-zoom img {
+            transform:scale(1.05);
+			-ms-transform:scale(1.05); /* IE 9 */
+			-moz-transform:scale(1.05); /* Firefox */
+			-webkit-transform:scale(1.05); /* Safari and Chrome */
+			-o-transform:scale(1.05); /* Opera */
+        }
+
+	    .dimax-promo-box__image{
+		    &:after{
+			    background-color: rgba($color: #000000, $alpha: 0.15);
+		    }
+	    }
+    }
+
+}
+
+.dimax-promo-box__link{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+.dimax-promo-box__content{
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	background-color: #ffffff;
+	// left: 75px;
+	// right: 75px;
+}
+
+.dimax-promo-box__title {
+	margin: 0 0 13px;
+	font-size: 28px;
+}
+
+.dimax-promo-box__image {
+	position: relative;
+
+	img{
+		display: block;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		transition: ease .3s;
+		background-color: rgba($color: #000000, $alpha: 0);
+	}
+
+	+ .dimax-promo-box__content {
+		bottom: -65px;
+	}
+}
+
+.dimax-promo-box__sale{
+	position: absolute;
+	top: 20px;
+	// left: 20px;
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	background-color: var(--rz-background-color-primary);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 28px;
+	z-index: 1;
+
+	.sale-price{
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1;
+	}
+
+	.regular-price{
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 8px;
+		line-height: 1;
+		text-decoration: line-through;
+	}
+}
+
+// position price sale
+.dimax-promo-box__price-position--right{
+	.dimax-promo-box__sale{
+		right: 20px;
+	}
+}
+
+.dimax-promo-box__price-position--left{
+	.dimax-promo-box__sale{
+		left: 20px;
+	}
+}
+
+// position content
+.dimax-promo-box__content-position--left{
+	.dimax-promo-box__content{
+		top: 105px;
+		bottom: 105px;
+		left: -142px;
+		justify-content: center;
+	}
+
+	.dimax-promo-box {
+		margin-left: 142px;
+	}
+}
+
+.dimax-promo-box__content-position--right{
+	.dimax-promo-box__content{
+		top: 105px;
+		bottom: 105px;
+		right: -142px;
+		justify-content: center;
+	}
+
+	.dimax-promo-box {
+		margin-right: 142px;
+	}
+}
+
+.dimax-promo-box__content-position--bottom{
+	.dimax-promo-box__content{
+		left: 75px;
+		right: 75px;
+	}
+}
+
+//description
+.dimax-promo-box__description {
+	margin: 0 0 13px;
+	font-size: 18px;
+}
