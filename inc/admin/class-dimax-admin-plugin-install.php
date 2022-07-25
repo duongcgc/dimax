@@ -74,13 +74,6 @@ class Plugin_Install {
 				'force_deactivation' => false,
 			),
 			array(
-				'name'               => esc_html__( 'WooCommerce', 'dimax' ),
-				'slug'               => 'woocommerce',
-				'required'           => true,
-				'force_activation'   => false,
-				'force_deactivation' => false,
-			),
-			array(
 				'name'               => esc_html__( 'Elementor Page Builder', 'dimax' ),
 				'slug'               => 'elementor',
 				'required'           => true,
@@ -106,20 +99,6 @@ class Plugin_Install {
 			array(
 				'name'               => esc_html__( 'MailChimp for WordPress', 'dimax' ),
 				'slug'               => 'mailchimp-for-wp',
-				'required'           => false,
-				'force_activation'   => false,
-				'force_deactivation' => false,
-			),
-			array(
-				'name'               => esc_html__( 'YITH WooCommerce Wishlist', 'dimax' ),
-				'slug'               => 'yith-woocommerce-wishlist',
-				'required'           => false,
-				'force_activation'   => false,
-				'force_deactivation' => false,
-			),
-			array(
-				'name'               => esc_html__( 'WCBoost – Variation Swatches', 'dimax' ),
-				'slug'               => 'wcboost-variation-swatches',
 				'required'           => false,
 				'force_activation'   => false,
 				'force_deactivation' => false,
